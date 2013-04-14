@@ -1,0 +1,23 @@
+{
+  "name": "transliterator",
+  "version": "0.0.1",
+  "description": "Turn strings into ascii compliant text",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psyduk/transliterator.git"
+  },
+  "keywords": [
+    "Transliterate",
+    "Ascii",
+    "change",
+    "string",
+    "text",
+    ""
+  ],
+  "author": "Andrew Ha",
+  "license": "MIT"
+}
