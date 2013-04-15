@@ -1,6 +1,6 @@
 {
   "name": "transliterator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Turn strings that contain cyrillic characters into ascii compliant text",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/psyduk/transliterator.git"
+    "url": "https://github.com/psyduk/node-transliterator.git"
   },
   "keywords": [
     "Transliterate",
