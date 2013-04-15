@@ -9,27 +9,27 @@ describe('transliterator', function () {
   });
 
   it('should return an ascii string', function () {
-    assert.equal(transliterator('i hatè véggiês'), 'i hate veggies');
-    assert.equal(transliterator('À Á Â Ã Å Ǻ Ā Ă Ą Ǎ'), 'A A A A A A A A A A');
+    assert.equal(transliterator('1234!'), '1234!');
     assert.equal(transliterator('źebŕa'), 'zebra');
     assert.equal(transliterator('ǿ\'doules.'), 'o\'doules.');
-    assert.equal(transliterator('1234!'), '1234!');
+    assert.equal(transliterator('i hatè véggiês'), 'i hate veggies');
+    assert.equal(transliterator('À Á Â Ã Å Ǻ Ā Ă Ą Ǎ'), 'A A A A A A A A A A');
   });
 
   it('should remove characters that have not been defined', function () {
     assert.equal(transliterator('a'), 'a');
-    assert.equal(transliterator('䫸 is ŗŒ'), ' is rOE');
-    assert.equal(transliterator('harǤold'), 'harold');
-    assert.equal(transliterator('պ պ պ պ'), '   ');
     assert.equal(transliterator('ޢ!'), '!');
+    assert.equal(transliterator('պ պ պ պ'), '   ');
+    assert.equal(transliterator('harǤold'), 'harold');
+    assert.equal(transliterator('䫸 is ŗŒ'), ' is rOE');
   });
 
   it('should replace unhandled characters with what is passed in', function () {
     assert.equal(transliterator('', 'h'), 'h');
-    assert.equal(transliterator('Ⓩbad ሏ', '_'), '_bad _');
-    assert.equal(transliterator('պ պ պ պ', '_'), '_ _ _ _');
     assert.equal(transliterator('ޢ', '!'), '!');
     assert.equal(transliterator('14141ྠ', 1), '141411');
+    assert.equal(transliterator('Ⓩbad ሏ', '_'), '_bad _');
+    assert.equal(transliterator('պ պ պ պ', '_'), '_ _ _ _');
   });
 
   it('should throw an error when passing in non strings', function () {
