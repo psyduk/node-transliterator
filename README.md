@@ -1,6 +1,6 @@
 # Transliterator
 
-A node module that transforms strings that contain cyrillic characters into ascii compliant text.
+A node module that transforms strings that contain cyrillic characters into ascii compliant text.  node-transliterator has the ability to replace characters with codes not normally viewable.
 
 An example use case is when you have parsed a string, and it contains an emoji.  node-transliterator will remove the emoji if you pass in the string.
 
