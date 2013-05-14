@@ -216,9 +216,15 @@ var characterMap = {
   };
 
 var transliterator = module.exports = function (string, replacement) {
+
+  if (string === null || string === undefined) {
+    return string;
+  }
+
   if (typeof string !== 'string') {
     throw new TypeError('Unmatched type: please use a string.');
   }
+  
   return string.split('').map(function (character) {
     if (character.charCodeAt(0) > 127) {
       return typeof characterMap[character] !== 'undefined' ?
