@@ -41,4 +41,24 @@ describe('transliterator', function () {
     }
     assert.notEqual(test, undefined);
   });
+
+  it('should return null when passing in null', function () {
+    var test;
+    try {
+      transliterator(null);
+    } catch (e) {
+      test = e;
+    }
+    assert.equal(test, null);
+  });
+
+  it('should return undefined when passing in undefined', function () {
+    var test;
+    try {
+      transliterator(undefined);
+    } catch (e) {
+      test = e;
+    }
+    assert.equal(test, undefined);
+  });
 });

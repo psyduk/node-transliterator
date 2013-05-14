@@ -19,5 +19,8 @@
     "cyrillic"
   ],
   "author": "Andrew Ha",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "~1.9.0"
+  }
 }
