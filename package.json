@@ -1,6 +1,6 @@
 {
   "name": "transliterator",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Turn strings that contain cyrillic characters into ascii compliant text",
   "main": "index.js",
   "scripts": {
